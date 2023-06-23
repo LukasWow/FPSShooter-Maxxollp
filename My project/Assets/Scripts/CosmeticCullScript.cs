@@ -10,7 +10,7 @@ public class CosmeticCullScript : MonoBehaviour
     {
         foreach(MeshRenderer i in cull)
         {
-            i.enabled = false;
+            i.gameObject.layer = 6;
         }
     }
 }
