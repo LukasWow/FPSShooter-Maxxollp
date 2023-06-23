@@ -359,10 +359,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcc92d25c90c69a4fb16ec24abd60863, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pm: {fileID: 0}
-  rb: {fileID: 0}
-  segments: 0
-  isGrappling: 0
   maxGrappleDistance: 100
   rope: {fileID: 1203028719}
   maximumSpeed: 100
@@ -372,17 +368,9 @@ MonoBehaviour:
   crossHairSpinSpeed: 200
   distanceToStop: 2
   layerMask:
+    serializedVersion: 2
     m_Bits: 512
   grappleCooldown: 1
-  isBlocked: 0
-  location: {fileID: 0}
-  hitName: 
-  grappleForce: {x: 0, y: 0, z: 0}
-  decelerateTimer: 0
-  max: 0
-  dir: {x: 0, y: 0, z: 0}
-  speed: 0
-  targetDistance: 0
 --- !u!114 &573539886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -395,8 +383,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ec39ce101b75a44ba203f9e9cbaa8b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
-  enableMovement: 1
   walkSpeed: 8
   runSpeed: 12
   changeInStageSpeed: 10
@@ -407,13 +393,6 @@ MonoBehaviour:
   groundCheckerDist: 0.9
   jumpForce: 500
   jumpCooldown: 1
-  jumpBlocked: 0
-  wallRun: {fileID: 0}
-  grapplingHook: {fileID: 0}
-  isGrounded: 0
-  inputForce: {x: 0, y: 0, z: 0}
-  i: 0
-  prevY: 0
 --- !u!54 &573539887
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -515,7 +494,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: d13bbe5f3b80d2d4d93fa17d43267e95, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -681,8 +660,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effectOverTime:
+    serializedVersion: 2
     m_Curve:
-    - time: 0
+    - serializedVersion: 3
+      time: 0
       value: 0
       inSlope: 6.31195
       outSlope: 6.31195
@@ -690,7 +671,8 @@ MonoBehaviour:
       weightedMode: 0
       inWeight: 0
       outWeight: 0.33333334
-    - time: 0.12929365
+    - serializedVersion: 3
+      time: 0.12929365
       value: 0.81609505
       inSlope: -0.0355607
       outSlope: -0.0355607
@@ -698,7 +680,8 @@ MonoBehaviour:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.66806597
-    - time: 0.30837175
+    - serializedVersion: 3
+      time: 0.30837175
       value: -0.4623491
       inSlope: -0.44618377
       outSlope: -0.44618377
@@ -706,7 +689,8 @@ MonoBehaviour:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
-    - time: 0.54300404
+    - serializedVersion: 3
+      time: 0.54300404
       value: 0.21932524
       inSlope: 0.19102211
       outSlope: 0.19102211
@@ -714,7 +698,8 @@ MonoBehaviour:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.48868415
-    - time: 0.7569171
+    - serializedVersion: 3
+      time: 0.7569171
       value: 0.2089212
       inSlope: 1.1788012
       outSlope: 1.1788012
@@ -722,7 +707,8 @@ MonoBehaviour:
       weightedMode: 0
       inWeight: 0.49981582
       outWeight: 0.33333334
-    - time: 1
+    - serializedVersion: 3
+      time: 1
       value: 0
       inSlope: -0.8594649
       outSlope: -0.8594649
@@ -734,8 +720,10 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   curve:
+    serializedVersion: 2
     m_Curve:
-    - time: 0
+    - serializedVersion: 3
+      time: 0
       value: 0
       inSlope: 4
       outSlope: 4
@@ -743,7 +731,8 @@ MonoBehaviour:
       weightedMode: 0
       inWeight: 0
       outWeight: 0.33333334
-    - time: 0.25
+    - serializedVersion: 3
+      time: 0.25
       value: 1
       inSlope: 0
       outSlope: 0
@@ -751,7 +740,8 @@ MonoBehaviour:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
-    - time: 0.75
+    - serializedVersion: 3
+      time: 0.75
       value: -1
       inSlope: 0
       outSlope: 0
@@ -759,7 +749,8 @@ MonoBehaviour:
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
-    - time: 1
+    - serializedVersion: 3
+      time: 1
       value: 0
       inSlope: 4
       outSlope: 4
@@ -771,8 +762,10 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   curveEffectOverDistance:
+    serializedVersion: 2
     m_Curve:
-    - time: 0
+    - serializedVersion: 3
+      time: 0
       value: 0
       inSlope: 6.6666665
       outSlope: 6.6666665
@@ -780,7 +773,8 @@ MonoBehaviour:
       weightedMode: 0
       inWeight: 0
       outWeight: 0.33333334
-    - time: 0.15
+    - serializedVersion: 3
+      time: 0.15
       value: 1
       inSlope: 0.22851442
       outSlope: 0.22851442
@@ -788,7 +782,8 @@ MonoBehaviour:
       weightedMode: 0
       inWeight: 1
       outWeight: 0.113118745
-    - time: 0.5969205
+    - serializedVersion: 3
+      time: 0.5969205
       value: 0.5641632
       inSlope: -1.3407401
       outSlope: -1.3407401
@@ -796,7 +791,8 @@ MonoBehaviour:
       weightedMode: 0
       inWeight: 0.3384771
       outWeight: 0.17303334
-    - time: 1
+    - serializedVersion: 3
+      time: 1
       value: 0
       inSlope: -1.3996326
       outSlope: -1.3996326
@@ -811,21 +807,6 @@ MonoBehaviour:
   scrollSpeed: 0.85
   segments: 100
   animSpeed: 1.5
-  lineRenderer: {fileID: 0}
-  _start: {x: 0, y: 0, z: 0}
-  _end: {x: 0, y: 0, z: 0}
-  _time: 0
-  _active: 0
-  vectors: []
-  forward: {x: 0, y: 0, z: 0, w: 0}
-  up: {x: 0, y: 0, z: 0}
-  defaultPos: {x: 0, y: 0, z: 0}
-  delta: 0
-  realDelta: 0
-  calcTime: 0
-  effect: 0
-  i: 0
-  d: 0
 --- !u!120 &1203028720
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -1283,7 +1264,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e30682c720b6694681a0eb8b7252ad3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam_: {fileID: 0}
   sensitivity: 3
   mouseX: 0
   mouseY: 0
@@ -1291,8 +1271,6 @@ MonoBehaviour:
   maxDownAngle: -80
   player: {fileID: 573539889}
   CameraPosition: {fileID: 2024875481}
-  rotX: 0
-  rotY: 0
   rotZ: 0
 --- !u!81 &1744796188
 AudioListener:
